@@ -347,6 +347,24 @@ h4 .emoji{
     color: white;
 }
 
-.colorred{
-    color: red;
-}
+.vertical-menu {
+    float: center;
+  }
+
+.vertical-menu a {
+    color: black;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .vertical-menu2 {
+    float: center;
+    width: 18vw;
+  }
+
+.vertical-menu2 a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 3vw
+  }
