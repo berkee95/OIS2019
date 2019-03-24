@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maak een account</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/javascript.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Page upper nav bar -->
+    <div class='page-bar front'>
+        <div class="row">
+
+            <!-- left btn -->
+            <div class="col s4 m2 l2">
+
+            </div>
+
+            <!-- navigation -->
+            <div class="col s4 m8 l8 text-align-center headernavdiv">
+                <a class="colorwhite headernavtext" href="index.html">OMSTREDEN ZAKEN</a>
+            </div>
+
+            <!-- btns -->
+            <div class="col s4 m2 l2 headernavdiv">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="row">
+            <!-- left area -->
+
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- content -->
+            <div class="col s12 m6 l4">
+
+                <h1>Account aanmaken</h1>
+
+                <p>Heeft u al een account? Ga dan a.u.b. naar het <a href="/accounts/login/">inlogscherm</a>.</p>
+
+                <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="Q5iW43YAgAQkeTKhdg4Ym16GpJufWVxXfKTtdDG3mXWVyGO5K3VuRPnliXpzdIZ4">
+                <p><label for="id_username">Inlognaam:</label> <input type="text" name="username" placeholder="Username" autofocus="autofocus" minlength="1" maxlength="150" required id="id_username"></p>
+                <p><label for="id_email">E-mail (optioneel):</label> <input type="email" name="email" placeholder="E-mail address" id="id_email"></p>
+                <p><label for="id_password1">Wachtwoord:</label> <input type="password" name="password1" placeholder="Password" required id="id_password1"></p>
+                <p><label for="id_password2">Wachtwoord (opnieuw):</label> <input type="password" name="password2" placeholder="Password (again)" required id="id_password2"></p>
+                
+                <a href="ingelogdalsdocent.html" class="waves-effect waves-light btn headernavbtn left"
+                <button class="primaryAction">Registreer</button></a>
+                </form>
+
+            </div>
+            
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- right area -->
+            <div class="col l3 text-align-center fixedpos fullvhheight showwhenlarge right border-left">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

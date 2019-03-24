@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inloggen</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/javascript.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Page upper nav bar -->
+    <div class='page-bar front'>
+        <div class="row">
+
+            <!-- left btn -->
+            <div class="col s4 m2 l2">
+
+            </div>
+
+            <!-- navigation -->
+            <div class="col s4 m8 l8 text-align-center headernavdiv">
+                <a class="colorwhite headernavtext" href="index.html">OMSTREDEN ZAKEN</a>
+            </div>
+
+            <!-- btns -->
+            <div class="col s4 m2 l2 headernavdiv">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="row">
+            <!-- left area -->
+
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- content -->
+            <div class="col s12 m6 l4">
+
+                <h1>Inloggen</h1>
+
+                <p>Als je nog geen account heb gemaakt, 
+                <a href="signup.html">maak dan eerst een account</a> </p>
+
+
+                <form class="login" method="POST" action="/accounts/login/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="EHVimrhDAKarUkEIXywG0gI843kYxEDF3mwPv1Z6G7g2e7Iwulncv4ZNXhfiOr5M">
+
+                    <p>
+                        <label for="id_login">Inlognaam:</label>
+                        <input id="id_login" type="text" name="login" placeholder="Username" autofocus="autofocus"
+                        maxlength="150" required="">
+                    </p>
+                    <p>
+                        <label for="id_password">Wachtwoord:</label>
+                        <input id="id_password" type="password" name="password" placeholder="Password"
+                        required="">
+                    </p>
+                    <p>
+                        <label for="id_remember">
+                            <input id="id_remember" type="checkbox" name="remember">
+                            <span>Onhoud mij</span> 
+                        </label>
+                    </p>
+                <!-- end form as p -->
+
+                <a href="ingelogdalsdocent.html" class="waves-effect waves-light btn headernavbtn left"
+                <button class="primaryAction">Log In</button></a>
+                </form>
+                </br>
+                </br>
+                <a class="button secondaryAction" href="/accounts/password/reset/">Wachtwoord vergeten?</a>
+
+            </div>
+            
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- right area -->
+            <div class="col l3 text-align-center fixedpos fullvhheight showwhenlarge right border-left">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

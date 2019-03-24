@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/javascript.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Page upper nav bar -->
+    <div class='page-bar front'>
+        <div class="row">
+
+            <!-- left btn -->
+            <div class="col s4 m2 l2">
+
+            </div>
+
+            <!-- navigation -->
+            <div class="col s4 m8 l8 text-align-center headernavdiv">
+                <a class="colorwhite headernavtext" href="index.html">OMSTREDEN ZAKEN</a>
+            </div>
+
+            <!-- btns -->
+            <div class="col s4 m2 l2 headernavdiv">
+
+                <!-- login btn -->  
+                <a class="waves-effect waves-light btn headernavbtn" href="login.html">Log in</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="row">
+            <!-- left area -->
+            <div class="col l3 fixedpos fullvhheight showwhenlarge left border-right text-align-center">
+                <p>Bronnen</p>
+                <p>Gebouwen</p>
+                <p>Afbeeldingen</p>
+                <p>Objecten</p>
+            </div>
+
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- content -->
+            <div class="col s12 m6 l4">
+
+
+                <div class="infinite-item">
+                        <a href='/posts/1'>
+                            <h4 class="center-align colorblack">Titel</h4>
+                            <div style="center-align">
+                                    <img src='{{ post.image.url }}' class='imgmeme'>
+                            </div>
+                        </a>
+                        <div class="text-align-right">
+                            <p class="italic twelvepx inline">posted by: </p>
+                            <a class="italic b twelvepx inline colorblue postcreator" href="/u/{{post.creator.id}}">{{ post.creator }}</a>
+                        </div>
+                </div>
+
+            </div>
+            
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- right area -->
+            <div class="col l3 text-align-center fixedpos fullvhheight showwhenlarge right border-left">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
