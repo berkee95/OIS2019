@@ -86,7 +86,7 @@ p{
 
 @media screen and (max-width: 1008px) {
     .showwhenlarge {
-        display: none;
+        display: none !important;
     }
 }
 
