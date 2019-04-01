@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Herstel uw wachtwoord</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/javascript.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Page upper nav bar -->
+    <div class='page-bar front'>
+        <div class="row">
+
+            <!-- left btn -->
+            <div class="col s4 m2 l2">
+
+            </div>
+
+            <!-- navigation -->
+            <div class="col s4 m8 l8 text-align-center headernavdiv">
+                <a class="colorwhite headernavtext" href="index.html">OMSTREDEN ZAKEN</a>
+            </div>
+
+            <!-- btns -->
+            <div class="col s4 m2 l2 headernavdiv">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="row">
+            <!-- left area -->
+
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- content -->
+            <div class="col s12 m6 l4">
+
+                <h1>Herstel uw wachtwoord</h1>
+
+                <p>Vul hier uw e-mailadres in, dan sturen wij u een code. Met deze code kunt u uw wachtwoord opnieuw instellen. Heeft u nog geen account? Klik dan
+                <a href="signup.html">hier</a>.</p>
+
+
+                <form class="Verstuur" method="POST" action="/accounts/login/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="EHVimrhDAKarUkEIXywG0gI843kYxEDF3mwPv1Z6G7g2e7Iwulncv4ZNXhfiOr5M">
+
+                    <p>
+                        <label for="id_login">E-mail:</label>
+                        <input id="id_login" type="text" name="login" placeholder="E-mail adres" autofocus="autofocus"
+                        maxlength="150" required="">
+                    </p>
+					<p> Vul het laatste wachtwoord dat u kunt herinneren. 
+                    <p>
+                        <label for="id_password">Wachtwoord:</label>
+                        <input id="id_password" type="password" name="password" placeholder="Password"
+                        required="">
+                    </p>
+                   
+                <!-- end form as p -->
+
+                <a href="ingelogdalsdocent.html" class="waves-effect waves-light btn headernavbtn left"
+                <button class="primaryAction">Verstuur <i class="material-icons right">send</i></button></a>
+                </form>
+
+            </div>
+            
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- right area -->
+            <div class="col l3 text-align-center fixedpos fullvhheight showwhenlarge right border-left">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
