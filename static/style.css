@@ -72,9 +72,22 @@ p{
     background-color: #ffcd00;
 } 
 
+.uubutton:hover{
+    background-color: #d8ad00;
+}
+
 .uubutton{
     background-color: #ffcd00;
     color: black;
+}
+
+.uulightbutton{
+    background-color: #fff3c4;
+    color: black;
+}
+
+.uulightbutton:hover{
+    background-color: #ffcd00;
 }
 
 .fixedpos{
