@@ -7,7 +7,6 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    
     <script src="static/javascript.js"></script>
 
     <meta charset="UTF-8">
@@ -48,29 +47,16 @@
 
                 <h1>Herstel uw wachtwoord</h1>
 
-                <p>Vul hier uw e-mailadres in, dan sturen wij u een code. Met deze code kunt u uw wachtwoord opnieuw instellen. Heeft u nog geen account? Klik dan
-                <a href="signup.html">hier</a>.</p>
+                <p>Voer hier uw code in, die u in uw mailbox heeft ontvangen. Voer ook het gewenste nieuwe wachtwoord in. Wij veranderen het wachtwoord en u kunt gelijk inloggen met uw nieuwe wachtwoord.</p>
 
-
-                <form class="Verstuur" method="POST" action="/accounts/login/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="EHVimrhDAKarUkEIXywG0gI843kYxEDF3mwPv1Z6G7g2e7Iwulncv4ZNXhfiOr5M">
-
-                    <p>
-                        <label for="id_login">E-mail:</label>
-                        <input id="id_login" type="text" name="login" placeholder="E-mail adres" autofocus="autofocus"
-                        maxlength="150" required="">
-                    </p>
-					<p> Vul het laatste wachtwoord dat u kunt herinneren. 
-                    <p>
-                        <label for="id_password">Wachtwoord:</label>
-                        <input id="id_password" type="password" name="password" placeholder="Password"
-                        required="">
-                    </p>
-                   
-                <!-- end form as p -->
-
-                <a href="wachtwoord_reset.html" class="waves-effect waves-light btn headernavbtn left"
-                <button class="primaryAction">Verstuur <i class="material-icons right">send</i></button></a>
+                <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="Q5iW43YAgAQkeTKhdg4Ym16GpJufWVxXfKTtdDG3mXWVyGO5K3VuRPnliXpzdIZ4">
+                <p><label for="id_username">Code:</label> <input type="text" name="username" placeholder="Code" autofocus="autofocus" minlength="1" maxlength="150" required id="id_username"></p>
+                <p><label for="id_password1">Wachtwoord:</label> <input type="password" name="password1" placeholder="Wachtwoord" required id="id_password1"></p>
+                <p><label for="id_password2">Wachtwoord (opnieuw):</label> <input type="password" name="password2" placeholder="Wachtwoord (opnieuw)" required id="id_password2"></p>
+                
+                <a href="login.html" class="waves-effect waves-light btn headernavbtn left"
+                <button class="primaryAction">Herstel</button></a>
                 </form>
 
             </div>
