@@ -346,6 +346,9 @@ h4 .emoji{
 .colorwhite{
     color: white;
 }
+.uufont{
+	font-family: 'Merriweather'
+}
 
 .vertical-menu {
     float: center;
