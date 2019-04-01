@@ -56,6 +56,27 @@ p{
     font-size: 22px;
 }
 
+.bottom50{
+    margin-bottom: 50px;
+}
+
+.top50{
+    margin-top:50px;
+}
+
+.zmin1{
+    z-index: -1;
+}
+
+.uukleur{
+    background-color: #ffcd00;
+} 
+
+.uubutton{
+    background-color: #ffcd00;
+    color: black;
+}
+
 .fixedpos{
     position: fixed;
 }
@@ -78,10 +99,12 @@ p{
 
 .border-right{
     border-right: 1px solid #eee;
+    z-index: -1;
 }
 
 .border-left{
     border-left: 1px solid #eee;
+    z-index: -1;
 }
 
 @media screen and (max-width: 1008px) {
