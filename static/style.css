@@ -70,7 +70,7 @@ p{
 
 .uukleur{
     background-color: #ffcd00;
-} 
+}
 
 .uubutton:hover{
     background-color: #d8ad00;
@@ -281,7 +281,7 @@ h4 .emoji{
         font-size: 20px;
         word-wrap: break-word;
     }
-    
+
     h4 .emoji{
         height: 20px;
         width: 20px;
@@ -312,7 +312,7 @@ h4 .emoji{
         font-size: 10px;
     }
 
-    
+
     .replycontainer{
         padding: 1px 10px;
     }
@@ -395,7 +395,7 @@ h4 .emoji{
     display: block;
     text-decoration: none;
   }
-  
+
   .vertical-menu2 {
     float: center;
     width: 18vw;
@@ -406,4 +406,14 @@ h4 .emoji{
     display: block;
     text-decoration: none;
     margin: 3vw
+  }
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  #page-footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
   }
