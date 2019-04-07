@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Herstel uw wachtwoord</title>
-    
+    <title>Inloggen</title>
+ 
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -46,20 +46,40 @@
             <!-- content -->
             <div class="col s12 m6 l4">
 
-                <h1>Herstel uw wachtwoord</h1>
+                <h1>Adminstrator login</h1>
 
-                <p>Voer hier uw code in, die u in uw mailbox heeft ontvangen. Voer ook het gewenste nieuwe wachtwoord in. Wij veranderen het wachtwoord en u kunt gelijk inloggen met uw nieuwe wachtwoord.</p>
+                <p>Dit is de login pagina voor beheerders.
+                <a href="login.html">Log hier in als gebruiker.</a> </p>
 
-                <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
-                <input type="hidden" name="csrfmiddlewaretoken" value="Q5iW43YAgAQkeTKhdg4Ym16GpJufWVxXfKTtdDG3mXWVyGO5K3VuRPnliXpzdIZ4">
-                <p><label for="id_username">Code:</label> <input type="text" name="username" placeholder="Code" autofocus="autofocus" minlength="1" maxlength="150" required id="id_username"></p>
-                <p><label for="id_password1">Wachtwoord:</label> <input type="password" name="password1" placeholder="Wachtwoord" required id="id_password1"></p>
-                <p><label for="id_password2">Wachtwoord (opnieuw):</label> <input type="password" name="password2" placeholder="Wachtwoord (opnieuw)" required id="id_password2"></p>
-                
-                <a href="login.html" class="waves-effect waves-light btn headernavbtn left"
-                <button class="primaryAction">Herstel</button></a>
+
+                <form class="login" method="POST" action="/accounts/login/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="EHVimrhDAKarUkEIXywG0gI843kYxEDF3mwPv1Z6G7g2e7Iwulncv4ZNXhfiOr5M">
+
+                    <p>
+                        <label for="id_login">Inlognaam:</label>
+                        <input id="id_login" type="text" name="login" placeholder="Username" autofocus="autofocus"
+                        maxlength="150" required="">
+                    </p>
+                    <p>
+                        <label for="id_password">Wachtwoord:</label>
+                        <input id="id_password" type="password" name="password" placeholder="Password"
+                        required="">
+                    </p>
+                    <p>
+                        <label for="id_remember">
+                            <input id="id_remember" type="checkbox" name="remember">
+                            <span>Onhoud mij</span> 
+                        </label>
+                    </p>
+                <!-- end form as p -->
+
+                <a href="artikel_bron_toevoegen.html" class="waves-effect waves-light btn headernavbtn left uubutton">
+                Log In</a>
                 </form>
-
+                </br>
+                </br>
+                <a class="button secondaryAction" href="wachtwoord_vergeten.html">Wachtwoord vergeten?</a>
+                <br>
             </div>
             
                 <!-- empty filler area -->
