@@ -417,3 +417,14 @@ h4 .emoji{
       bottom: 0;
       width: 100%;
   }
+  #footerfix {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+
+#id_login:focus, #id_password:focus, #id_username:focus, #id_email:focus, #id_password1:focus, #id_password2:focus {
+    border-bottom: 1px solid #ffcd00;
+    -webkit-box-shadow: 0 1px 0 0 #ffcd00;
+    box-shadow: 0 1px 0 0 #ffcd00;
+}
