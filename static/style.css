@@ -434,3 +434,7 @@ h4 .emoji{
 #id_notitie:focus+label {
     color: #ffcd00;
 }
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #ffcd00;
+    border-bottom: 2px solid #ffcd00;
+}
