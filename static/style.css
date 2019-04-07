@@ -112,12 +112,14 @@ p{
 
 .border-right{
     border-right: 1px solid #eee;
-    z-index: -1;
+}
+
+.front{
+    z-index: 100 !important;
 }
 
 .border-left{
     border-left: 1px solid #eee;
-    z-index: -1;
 }
 
 @media screen and (max-width: 1008px) {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Les - Kerkexhibitie</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="static/javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Page upper nav bar -->
+    <div class='page-bar front'>
+        <div class="row">
+
+            <!-- left btn -->
+            <div class="col s4 m2 l2 headernavdiv">
+                    
+                    <a class="waves-effect waves-light btn colorblack headernavbtn uulightbutton" href="zoek.html">
+                    <i class="material-icons right showwhenlarge">search</i>Zoek</a>
+            </div>
+
+            <!-- navigation -->
+            <div class="col s4 m8 l8 text-align-center headernavdiv">
+                <a class="colorwhite headernavtext uufont" href="index.html" font-family: merriweather>
+                <i class="material-icons ptop">home</i>Omstreden Zaken</a>
+            </div>
+
+            <!-- btns -->
+            <div class="col s4 m2 l2 headernavdiv">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+        <div class="row">
+            <!-- left area -->
+            <div class="col l3 fixedpos fullvhheight showwhenlarge left border-right text-align-center">
+
+            </div>
+
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- content -->
+            <div class="col s12 m6 l4">
+
+      
+                </br></br>
+                <div id="dropdown2">
+                    <label for="nt1">Les naam:</label> <input id="id_notitie" type="text" id="nt1" placeholder="Les 1" autofocus="autofocus" minlength="1" maxlength="150" required id="id_name">
+
+                </div>
+                
+                <label for="inputtext">Toegevoegd materiaal:</label><input id="inputtext" type="text" placeholder="er is nog niks toegevoegd.">
+                    
+                </br></br>
+                <a href="ingelogdalsdocent2.html" class="waves-effect waves-light btn uubutton">
+                    Les Toevoegen
+                </a>    
+                </br></br></br>
+
+
+                <h6>Voeg materiaal toe aan de les:</h6>
+
+                <form class="login">
+                <input type="hidden" name="csrfmiddlewaretoken">
+                    <p>
+                        <label for="id_login">Zoeken op:</label>
+                        <input id="id_login" type="text" name="login" placeholder="Zoekterm" autofocus="autofocus"
+                        maxlength="150" required="">
+                    </p>
+                <!-- end form as p -->
+
+                <a class="waves-effect waves-light btn headernavbtn left uubutton" 
+                onclick="document.getElementById('hiddenTM').style.visibility = 'visible';"
+                >
+                Zoeken</a>
+                </form>
+
+                </br></br></br>
+
+                <div id="hiddenTM" style="visibility:hidden;">
+                <div class="card" onclick="document.getElementById('inputtext').value = ' Ulu Moskee';">
+                    <div class="card-image">
+                        <img src="ulumoskee.jpg">
+                        <span class="card-title">Ulu Moskee</span>
+                    </div>
+                    <div class="card-content">
+                        <p>De Ulu Moskee (Grote moskee) in de Utrechtse subwijk Lombok ligt aan het Moskeeplein,
+                            het eerste plein in Nederland dat naar een islamitisch gebedshuis is vernoemd.</p>
+                    </div>
+                    <div class="card-action">
+                        <a >Toevoegen</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+            </div>
+            
+                <!-- empty filler area -->
+                <div class="col s0 m3 l4"></div>
+
+            <!-- right area -->
+            <div class="col l3 text-align-center fixedpos fullvhheight showwhenlarge right border-left">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
